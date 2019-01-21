@@ -1,0 +1,28 @@
+export default class Letterfirst extends Laya.Scene {
+    constructor() {
+        super();
+    }
+    onEnable(){
+        
+        
+        this.first.on(laya.events.Event.MOUSE_UP,this,this.firstCkick)
+    }
+    firstCkick(){
+        document.querySelector("#music_play_filter").pause();  
+        document.querySelector("#bgMusicBtn").classList.add("circle")
+        document.querySelector("#bgMusicBtn").classList.add("music")
+        
+        
+        document.querySelector("#music_play_filter").play();
+        document.querySelector("#bgMusicBtn").onclick = function(){
+        if(this.classList.contains("music")){
+            document.querySelector("#music_play_filter").pause();
+            this.classList.remove("music")
+        }else{
+            document.querySelector("#music_play_filter").play();
+            this.classList.add("music")
+        }   
+    }
+        Laya.Scene.open("Lettersecond.scene")
+    }
+}

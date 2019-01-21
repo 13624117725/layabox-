@@ -1,0 +1,1 @@
+{"type":"Scene","props":{"width":640,"runtime":"start/Letterfirst.js","name":"Letterfirst","height":1220},"compId":2,"child":[{"type":"Sprite","props":{"y":0,"x":0,"width":640,"var":"first","texture":"comp/index.jpg","height":1120},"compId":7}],"loadList":["comp/index.jpg"],"loadList3D":[]}
